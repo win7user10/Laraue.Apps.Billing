@@ -1,3 +1,4 @@
+using Laraue.Apps.Billing.DataAccess.Boards;
 using Laraue.Apps.Billing.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -5,10 +6,9 @@ namespace Laraue.Apps.Billing.DataAccess;
 
 public class DatabaseContext : DbContext
 {
-    public required DbSet<Tariff> Tariffs { get; set; }
+    public required DbSet<LaraueBoardsPersonalTariff> LaraueBoardsPersonalTariffs { get; set; }
+    public required DbSet<LaraueBoardsTeamTariff> LaraueBoardsTeamTariffs { get; set; }
     public required DbSet<Service> Services { get; set; }
-    public required DbSet<BoardTariff> BoardTariffs { get; set; }
-    public required DbSet<MarkdownTranslatorTariff> MarkdownTranslatorTariffs { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -18,5 +18,11 @@ public class DatabaseContext : DbContext
             .HasData(
                 ServicesSource.Boards,
                 ServicesSource.MarkdownTranslator);
+
+        modelBuilder.Entity<LaraueBoardsPersonalTariff>()
+            .HasData(LaraueBoardsTariffs.PersonalTariffs);
+        
+        modelBuilder.Entity<LaraueBoardsTeamTariff>()
+            .HasData(LaraueBoardsTariffs.TeamTariffs);
     }
 }
