@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.Billing.DataAccess", "Laraue.Apps.Billing.DataAccess\Laraue.Apps.Billing.DataAccess.csproj", "{A8F6B2D8-D88D-4498-A832-7E233E677596}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8F6B2D8-D88D-4498-A832-7E233E677596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F6B2D8-D88D-4498-A832-7E233E677596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F6B2D8-D88D-4498-A832-7E233E677596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F6B2D8-D88D-4498-A832-7E233E677596}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
