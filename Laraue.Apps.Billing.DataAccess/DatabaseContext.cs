@@ -11,6 +11,7 @@ public class DatabaseContext : DbContext
     public required DbSet<LaraueBoardsTeamTariff> LaraueBoardsTeamTariffs { get; set; }
     public required DbSet<MarkdownTranslatorPersonalTariff> MarkdownTranslatorPersonalTariffs { get; set; }
     public required DbSet<TokenPack> TokenPacks { get; set; }
+    public required DbSet<CurrencyRate> CurrencyRates { get; set; }
     public required DbSet<Service> Services { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -18,9 +19,7 @@ public class DatabaseContext : DbContext
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<Service>()
-            .HasData(
-                ServicesData.Boards,
-                ServicesData.MarkdownTranslator);
+            .HasData(ServicesData.Services);
 
         modelBuilder.Entity<LaraueBoardsPersonalTariff>()
             .HasData(LaraueBoardsTariffsData.PersonalTariffs);
@@ -33,5 +32,8 @@ public class DatabaseContext : DbContext
         
         modelBuilder.Entity<TokenPack>()
             .HasData(TokenPacksData.Packs);
+        
+        modelBuilder.Entity<CurrencyRate>()
+            .HasData(CurrencyRatesData.CurrencyRates);
     }
 }
