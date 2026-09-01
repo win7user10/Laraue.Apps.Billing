@@ -1,6 +1,6 @@
 namespace Laraue.Apps.Billing.DataAccess.Data;
 
-public static class ServicesSource
+public static class ServicesData
 {
     public static Service Boards = new()
     {

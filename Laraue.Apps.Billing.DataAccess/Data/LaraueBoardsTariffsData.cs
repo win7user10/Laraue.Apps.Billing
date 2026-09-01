@@ -1,6 +1,8 @@
-namespace Laraue.Apps.Billing.DataAccess.LaraueBoards;
+using Laraue.Apps.Billing.DataAccess.LaraueBoards;
 
-public static class LaraueBoardsTariffs
+namespace Laraue.Apps.Billing.DataAccess.Data;
+
+public static class LaraueBoardsTariffsData
 {
     private static readonly LaraueBoardsPersonalTariff PersonalFree = new()
     {
@@ -9,7 +11,7 @@ public static class LaraueBoardsTariffs
         LimitIssuesPerMonth = 500,
         LimitFreeTeamOrganizationsCount = 1,
         IsActive = true,
-        Code = LaraueBoardsTariffCode.PersonalFree,
+        Code = "personal_free",
     };
 
     private static readonly LaraueBoardsPersonalTariff PersonalPlus = new()
@@ -20,7 +22,7 @@ public static class LaraueBoardsTariffs
         LimitIssuesPerMonth = 50_000,
         IncludedTokensCount = 300_000,
         IsActive = true,
-        Code = LaraueBoardsTariffCode.PersonalPlus,
+        Code = "personal_plus",
     };
 
     private static readonly LaraueBoardsTeamTariff TeamFree = new()
@@ -29,7 +31,7 @@ public static class LaraueBoardsTariffs
         BillingPeriod = BillingPeriod.Monthly,
         LimitIssuesPerMonth = 500,
         IsActive = true,
-        Code = LaraueBoardsTariffCode.TeamFree,
+        Code = "team_free",
     };
 
     private static readonly LaraueBoardsTeamTariff Team = new()
@@ -40,7 +42,7 @@ public static class LaraueBoardsTariffs
         IncludedTokensCount = 750_000,
         LimitIssuesPerMonth = 50_000,
         IsActive = true,
-        Code = LaraueBoardsTariffCode.Team,
+        Code = "team",
     };
 
     private static readonly LaraueBoardsTeamTariff TeamBusiness = new()
@@ -51,7 +53,7 @@ public static class LaraueBoardsTariffs
         IncludedTokensCount = 2_500_000,
         LimitIssuesPerMonth = 200_000,
         IsActive = true,
-        Code = LaraueBoardsTariffCode.TeamBusiness,
+        Code = "team_business",
     };
 
     public static readonly LaraueBoardsTeamTariff[] TeamTariffs =

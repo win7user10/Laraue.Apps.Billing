@@ -1,22 +1,16 @@
 namespace Laraue.Apps.Billing.DataAccess;
 
-public class BaseTariff<TTariffCode> where TTariffCode : struct, Enum
+public class BaseTariff
 {
-    public Guid Id { get; set; }
-    public TTariffCode Code { get; set; }
+    public required Guid Id { get; set; }
+    public required string Code { get; set; }
     public int Price { get; set; }
-    public BillingPeriod BillingPeriod { get; set; }
+    public required BillingPeriod BillingPeriod { get; set; }
     public long IncludedTokensCount { get; set; }
-    public bool IsActive { get; set; }
+    public required bool IsActive { get; set; }
 }
 
 public enum BillingPeriod
 {
     Monthly,
-}
-
-public enum TariffType
-{
-    Personal,
-    Team,
 }
