@@ -7,12 +7,22 @@ namespace Laraue.Apps.Billing.DataAccess;
 
 public class DatabaseContext : DbContext
 {
+    #region Tariffs
+
     public required DbSet<LaraueBoardsPersonalTariff> LaraueBoardsPersonalTariffs { get; set; }
     public required DbSet<LaraueBoardsTeamTariff> LaraueBoardsTeamTariffs { get; set; }
     public required DbSet<MarkdownTranslatorPersonalTariff> MarkdownTranslatorPersonalTariffs { get; set; }
     public required DbSet<TokenPack> TokenPacks { get; set; }
     public required DbSet<CurrencyRate> CurrencyRates { get; set; }
     public required DbSet<Service> Services { get; set; }
+
+    #endregion
+
+    #region Balance & Transactions
+
+    
+
+    #endregion
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
