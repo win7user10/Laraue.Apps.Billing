@@ -1,4 +1,4 @@
-﻿namespace Laraue.Apps.Billing.DataAccess.Boards;
+﻿namespace Laraue.Apps.Billing.DataAccess.LaraueBoards;
 
 public class LaraueBoardsPersonalTariff : BasePersonalTariff<LaraueBoardsTariffCode>
 {
