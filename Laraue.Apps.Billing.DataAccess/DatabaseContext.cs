@@ -20,7 +20,7 @@ public class DatabaseContext : DbContext
 
     #region Balance & Transactions
 
-    
+    public required DbSet<Subscription> Subscriptions { get; set; }
 
     #endregion
 
