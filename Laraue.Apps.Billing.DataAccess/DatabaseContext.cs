@@ -7,6 +7,11 @@ namespace Laraue.Apps.Billing.DataAccess;
 
 public class DatabaseContext : DbContext
 {
+    public DatabaseContext(DbContextOptions options) 
+        : base(options)
+    {
+    }
+    
     #region Tariffs
 
     public required DbSet<LaraueBoardsPersonalTariff> LaraueBoardsPersonalTariffs { get; set; }
@@ -26,8 +31,6 @@ public class DatabaseContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
-
         modelBuilder.Entity<Service>()
             .HasData(ServicesData.Services);
 
