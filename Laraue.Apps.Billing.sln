@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.Billing.DataAccess", "Laraue.Apps.Billing.DataAccess\Laraue.Apps.Billing.DataAccess.csproj", "{A8F6B2D8-D88D-4498-A832-7E233E677596}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.Billing.DataAccess", "src\Laraue.Apps.Billing.DataAccess\Laraue.Apps.Billing.DataAccess.csproj", "{A8F6B2D8-D88D-4498-A832-7E233E677596}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.Billing.Internal.Contracts", "Laraue.Apps.Billing.Internal.Contracts\Laraue.Apps.Billing.Internal.Contracts.csproj", "{5613CB8F-E4D0-4FD2-AA94-3E705B57D984}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.Billing.Internal.Contracts", "src\Laraue.Apps.Billing.Internal.Contracts\Laraue.Apps.Billing.Internal.Contracts.csproj", "{5613CB8F-E4D0-4FD2-AA94-3E705B57D984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.Billing.WebApiServices", "Laraue.Apps.Billing.WebApiServices\Laraue.Apps.Billing.WebApiServices.csproj", "{A30A5B73-4CE1-45B5-A8D6-23D7F5B3BDAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.Billing.WebApiServices", "src\Laraue.Apps.Billing.WebApiServices\Laraue.Apps.Billing.WebApiServices.csproj", "{A30A5B73-4CE1-45B5-A8D6-23D7F5B3BDAE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hosts", "hosts", "{5563ACB5-3B77-4AEE-8B67-209330935856}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.Billing.WebApi", "Laraue.Apps.Billing.WebApi\Laraue.Apps.Billing.WebApi.csproj", "{D7A8407C-338F-4144-96B9-CB5DC4282B35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laraue.Apps.Billing.WebApi", "src\Laraue.Apps.Billing.WebApi\Laraue.Apps.Billing.WebApi.csproj", "{D7A8407C-338F-4144-96B9-CB5DC4282B35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
