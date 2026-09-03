@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Laraue.Apps.Billing.DataAccess;
+namespace Laraue.Apps.Billing.DataAccess.Entities;
 
 public class CurrencyRate
 {

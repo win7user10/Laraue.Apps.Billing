@@ -1,6 +1,5 @@
 using Laraue.Apps.Billing.DataAccess.Data;
-using Laraue.Apps.Billing.DataAccess.LaraueBoards;
-using Laraue.Apps.Billing.DataAccess.MarkdownTranslator;
+using Laraue.Apps.Billing.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Laraue.Apps.Billing.DataAccess;

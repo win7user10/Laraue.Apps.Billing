@@ -1,4 +1,5 @@
 using Laraue.Apps.Billing.DataAccess;
+using Laraue.Apps.Billing.DataAccess.Entities;
 
 namespace Laraue.Apps.Billing.WebApiServices;
 

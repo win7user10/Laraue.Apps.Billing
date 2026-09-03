@@ -1,4 +1,6 @@
-﻿namespace Laraue.Apps.Billing.DataAccess.Data;
+﻿using Laraue.Apps.Billing.DataAccess.Entities;
+
+namespace Laraue.Apps.Billing.DataAccess.Data;
 
 public static class TokenPacksData
 {

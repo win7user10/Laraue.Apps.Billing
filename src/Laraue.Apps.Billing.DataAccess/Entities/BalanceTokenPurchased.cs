@@ -1,4 +1,4 @@
-﻿namespace Laraue.Apps.Billing.DataAccess;
+﻿namespace Laraue.Apps.Billing.DataAccess.Entities;
 
 /// <summary>
 /// Materialized token balances for purchased token packs.

@@ -1,3 +1,5 @@
+using Laraue.Apps.Billing.DataAccess.Entities;
+
 namespace Laraue.Apps.Billing.DataAccess.Data;
 
 public static class ServicesData

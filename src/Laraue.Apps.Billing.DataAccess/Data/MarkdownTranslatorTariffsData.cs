@@ -1,4 +1,4 @@
-using Laraue.Apps.Billing.DataAccess.MarkdownTranslator;
+using Laraue.Apps.Billing.DataAccess.Entities;
 
 namespace Laraue.Apps.Billing.DataAccess.Data;
 

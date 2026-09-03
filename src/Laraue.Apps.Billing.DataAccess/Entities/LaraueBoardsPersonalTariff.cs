@@ -1,4 +1,4 @@
-﻿namespace Laraue.Apps.Billing.DataAccess.LaraueBoards;
+﻿namespace Laraue.Apps.Billing.DataAccess.Entities;
 
 public class LaraueBoardsPersonalTariff
 {

@@ -1,4 +1,4 @@
-﻿namespace Laraue.Apps.Billing.DataAccess.MarkdownTranslator;
+﻿namespace Laraue.Apps.Billing.DataAccess.Entities;
 
 public class MarkdownTranslatorPersonalTariff
 {
