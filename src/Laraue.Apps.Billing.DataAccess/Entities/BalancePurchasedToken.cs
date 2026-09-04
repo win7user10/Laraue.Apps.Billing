@@ -3,7 +3,7 @@
 /// <summary>
 /// Materialized token balances for purchased token packs.
 /// </summary>
-public class BalanceTokenPurchased
+public class BalancePurchasedToken
 {
     /// <summary>
     ///  User or organization id.

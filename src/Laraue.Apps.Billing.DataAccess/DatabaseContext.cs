@@ -26,6 +26,12 @@ public class DatabaseContext : DbContext
     #region Balance & Transactions
 
     public required DbSet<Subscription> Subscriptions { get; set; }
+    public required DbSet<BalancePurchasedToken> BalancePurchasedTokens { get; set; }
+    public required DbSet<BalanceSubscriptionToken> BalanceSubscriptionTokens { get; set; }
+    public required DbSet<PurchasedTokenPack> PurchasedTokenPacks { get; set; }
+    public required DbSet<TokenTransaction> TokenTransactions { get; set; }
+    public required DbSet<TokenTransactionPurchasedTokenPack> TokenTransactionPurchasedTokenPacks { get; set; }
+    public required DbSet<TokenTransactionSubscriptionTokenPack> TokenTransactionSubscriptionTokenPacks { get; set; }
 
     #endregion
 

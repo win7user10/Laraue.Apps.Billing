@@ -3,7 +3,7 @@
 /// <summary>
 /// Materialized token balances for service subscriptions.
 /// </summary>
-public class BalanceTokenSubscription
+public class BalanceSubscriptionToken
 {
     public Guid SubscriptionId { get; set; }
     public Subscription? Subscription { get; set; }
