@@ -60,5 +60,15 @@ public class DatabaseContext : DbContext
         
         modelBuilder.Entity<CurrencyRate>()
             .HasData(CurrencyRatesData.CurrencyRates);
+
+        modelBuilder.Entity<BalancePurchasedToken>(builder =>
+        {
+            builder.HasKey(x => x.PaidEntityId);
+        });
+
+        modelBuilder.Entity<BalanceSubscriptionToken>(builder =>
+        {
+            builder.HasKey(x => x.SubscriptionId);
+        });
     }
 }
