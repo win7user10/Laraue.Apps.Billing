@@ -13,6 +13,7 @@ public class DatabaseContext : DbContext
     
     #region Tariffs
 
+    public required DbSet<Tariff> Tariffs { get; set; }
     public required DbSet<LaraueBoardsPersonalTariff> LaraueBoardsPersonalTariffs { get; set; }
     public required DbSet<LaraueBoardsTeamTariff> LaraueBoardsTeamTariffs { get; set; }
     public required DbSet<MarkdownTranslatorPersonalTariff> MarkdownTranslatorPersonalTariffs { get; set; }
@@ -33,15 +34,21 @@ public class DatabaseContext : DbContext
         modelBuilder.Entity<Service>()
             .HasData(ServicesData.Services);
 
+        modelBuilder.Entity<Tariff>()
+            .HasData(
+                LaraueBoardsTariffsData.PersonalTariffs.Select(x => x.Tariff)
+                    .Concat(LaraueBoardsTariffsData.TeamTariffs.Select(x => x.Tariff))
+                    .Concat(MarkdownTranslatorTariffsData.PersonalTariffs.Select(x => x.Tariff)));
+
         modelBuilder.Entity<LaraueBoardsPersonalTariff>()
-            .HasData(LaraueBoardsTariffsData.PersonalTariffs);
-        
+            .HasData(LaraueBoardsTariffsData.PersonalTariffs.Select(x => x.Entity));
+
         modelBuilder.Entity<LaraueBoardsTeamTariff>()
-            .HasData(LaraueBoardsTariffsData.TeamTariffs);
-        
+            .HasData(LaraueBoardsTariffsData.TeamTariffs.Select(x => x.Entity));
+
         modelBuilder.Entity<MarkdownTranslatorPersonalTariff>()
-            .HasData(MarkdownTranslatorTariffsData.PersonalTariffs);
-        
+            .HasData(MarkdownTranslatorTariffsData.PersonalTariffs.Select(x => x.Entity));
+
         modelBuilder.Entity<TokenPack>()
             .HasData(TokenPacksData.Packs);
         
